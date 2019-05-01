@@ -2,11 +2,10 @@
 	<?PHP 
 	$current_file = basename($_SERVER['PHP_SELF']);
 	 if($current_file == "home.php") {
-		$home_color = "Yellow"
+		$home_color = "Yellow";
 		} else {
-			$home_color = "Pink"
-		} 
-	?>
+			$home_color = "Pink";
+		} ?>
 	<h2>Think.</h2>
 		<ul>
 			<li><a href="/home.php">Home</a></li>
