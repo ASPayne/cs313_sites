@@ -1,3 +1,9 @@
+<?PHP
+// Start the session
+//session_start();
+include 'session.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +17,8 @@
 <?php
 include 'header.php';
 ?>
-
+<button>Temp Login as Admin</button>
+<button>Temp Login as Tester</button>
 <a href="/home.php">Log In as Administrator</a>
 <a href="/home.php">Log In as Tester</a>
 

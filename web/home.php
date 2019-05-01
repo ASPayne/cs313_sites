@@ -1,3 +1,9 @@
+<?PHP
+// Start the session
+//session_start();
+include 'session.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +17,7 @@
 <?php
 include 'header.php';
 ?>
-	<h1>Welcome!</h1>
+	<h1>Welcome <?PHP echo $_SESSION["user"] ?>!</h1>
 	<p>You are not logged in.</p>
 </body>
 </html>
