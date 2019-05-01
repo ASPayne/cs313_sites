@@ -5,7 +5,7 @@
 	?>
 	<h2>Think.</h2>
 		<ul>
-			<li><a color="blue" href="/home.php">Home</a></li>
+			<li><a background-color="blue" href="/home.php">Home</a></li>
 			<li><a href="/about-us.php">About Us</a></li>
 			<li><a href="/login.php">login</a></li>
 		</ul>
