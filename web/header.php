@@ -9,7 +9,7 @@
 	?>
 	<h2>Think.</h2>
 		<ul>
-			<li><div style="background-color:Blue;"><a style="background-color: $home_color ;" href="/home.php">Home</a></div></li>
+			<li><div style="background-color:Blue;"><a style="background-color: <?PHP $home_color ?> ;" href="/home.php">Home</a></div></li>
 			<li><a href="/about-us.php">About Us</a></li>
 			<li><a href="/login.php">login</a></li>
 		</ul>
