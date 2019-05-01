@@ -1,7 +1,11 @@
 <header>
+	<?PHP
+	$current_file = basename($_SERVER['PHP_SELF']);
+
+	?>
 	<h2>Think.</h2>
 		<ul>
-			<li><a href="/home.php">Home</a></li>
+			<li style= color:"blue"><a href="/home.php">Home</a></li>
 			<li><a href="/about-us.php">About Us</a></li>
 			<li><a href="/login.php">login</a></li>
 		</ul>
