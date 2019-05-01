@@ -5,7 +5,12 @@
 	?>
 	<h2>Think.</h2>
 		<ul>
-			<li><div style="background-color:Blue;"><a style="background-color:Blue;" href="/home.php">Home</a></div></li>
+			<li><div style="background-color:Blue;"><a style="<?PHP if($current_file == 'home.php') {
+echo "background-color:Yellow;"
+} else {
+	echo "background-color:Pink;"
+}?>
+href="/home.php">Home</a></div></li>
 			<li><a href="/about-us.php">About Us</a></li>
 			<li><a href="/login.php">login</a></li>
 		</ul>
