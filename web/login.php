@@ -19,7 +19,7 @@ include 'header.php';
 ?>
 
 <form action="home.php" method="post">
-Name: <input type="text" name="user"><br>
+Name: <input type="text" name="<?PHP $_SESSION["user"] ?>"><br>
 <button type="submit">Temp Login as Admin</button>
 </form>
 
