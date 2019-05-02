@@ -3,24 +3,24 @@
 	<?PHP
 	$current_file = basename($_SERVER['PHP_SELF']);
 
-	$home_color = "Pink";
-	$about_us_color = "Pink";
-	$login_color = "Pink";
+	$home_color = "inherit";
+	$about_us_color = "inherit";
+	$login_color = "inherit";
 
 	switch ($current_file) {
 		case "home.php":
-			$home_color = "Yellow";
+			$home_color = "Teal";
 			break;
 		case "about-us.php":
-			$about_us_color = "Yellow";
+			$about_us_color = "Teal";
 			break;
 		case "login.php":
-			$login_color = "Yellow";
+			$login_color = "Teal";
 			break;
 		default:
-			$home_color = "Pink";
-			$about_us_color = "Pink";
-			$login_color = "Pink";
+			$home_color = "inherit";
+			$about_us_color = "inherit";
+			$login_color = "inherit";
 	}
 	?>
 
