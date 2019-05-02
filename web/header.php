@@ -29,12 +29,9 @@
 
 		<h2>Think.</h2>
 
-		<div class=navbar>
-			<ul>
-				<li><a style="background-color:<?PHP echo $home_color ?>;" href="/home.php">Home</a></li>
-				<li><a style="background-color:<?PHP echo $about_us_color ?>;" href="/about-us.php">About Us</a></li>
-				<li><a style="background-color:<?PHP echo $login_color ?>;" href="/login.php">login</a></li>
-			</ul>
+		<div class=navbar><a style="background-color:<?PHP echo $home_color ?>;" href="/home.php">Home</a><
+				<a style="background-color:<?PHP echo $about_us_color ?>;" href="/about-us.php">About Us</a>
+				<a style="background-color:<?PHP echo $login_color ?>;" href="/login.php">login</a>
 		</div>
 	</div>
 </header>
