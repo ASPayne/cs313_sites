@@ -1,4 +1,5 @@
 <header>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
 	<?PHP
 	$current_file = basename($_SERVER['PHP_SELF']);
 
@@ -23,10 +24,17 @@
 	}
 	?>
 
-	<h2>Think.</h2>
-	<ul>
-		<li><a style="background-color:<?PHP echo $home_color ?>;" href="/home.php">Home</a></li>
-		<li><a style="background-color:<?PHP echo $about_us_color ?>;" href="/about-us.php">About Us</a></li>
-		<li><a style="background-color:<?PHP echo $login_color ?>;" href="/login.php">login</a></li>
-	</ul>
+
+	<div class=header>
+
+		<h2>Think.</h2>
+
+		<div class=navbar>
+			<ul>
+				<li><a style="background-color:<?PHP echo $home_color ?>;" href="/home.php">Home</a></li>
+				<li><a style="background-color:<?PHP echo $about_us_color ?>;" href="/about-us.php">About Us</a></li>
+				<li><a style="background-color:<?PHP echo $login_color ?>;" href="/login.php">login</a></li>
+			</ul>
+		</div>
+	</div>
 </header>

@@ -1,0 +1,12 @@
+.header{
+    background-color: azure;
+    height: 72px;
+    width: 100%;
+}
+
+.navbar{
+    height: 45px;
+    background-color: steelblue;
+    font-family: fantasy;
+    color: black;
+}
