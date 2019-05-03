@@ -26,10 +26,10 @@
 	?>
 
 		<div class=topbanner>
-			<h2 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px;">Think.</h2>
+			<h2 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px; display:block;">Think.</h2>
 			<p style="float:right; letter-spacing:2px">A COMPANY TO THINK ABOUT</p>
 		</div>
-		<ul class="navbar" style="clear:both">
+		<ul class="navbar" style="top: 0px; position: relative;">
 			<li class="navitem<?PHP if ($home_active) {echo " active";} ?>">
 				<a href="/home.php">Home</a></li>
 			<li class="navitem<?PHP if ($about_active) {echo " active";} ?>">
