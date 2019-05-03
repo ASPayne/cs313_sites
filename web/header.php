@@ -25,7 +25,7 @@
 	}
 	?>
 
-		<div class=topbanner>
+		<div style="display:block" class=topbanner>
 			<h2 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px; display:block;">Think.</h2>
 			<p style="float:right; letter-spacing:2px; display:block;">A COMPANY TO THINK ABOUT</p>
 		</div>
