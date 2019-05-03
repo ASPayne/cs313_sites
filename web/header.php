@@ -26,7 +26,7 @@
 	?>
 
 		<div class=topbanner>
-			<h1 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:x-large;">Think.</h1>
+			<h2 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px;">Think.</h2>
 			<p>A company to think about.</p>
 		</div>
 		<ul class=navbar>
