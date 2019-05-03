@@ -39,8 +39,6 @@ switch ($current_file) {
 <header>
     <?PHP include 'navbar.php'; ?>
     <div class=topbanner> 
-        <bannerlogo style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px; display:block;">Think.</bannerlogo>
-        <p style="float:right; letter-spacing:2px; display:block;">A COMPANY TO THINK ABOUT</p>
+        <div class="bannerlogo">Think Inc.</div>
     </div>
-
 </header>
