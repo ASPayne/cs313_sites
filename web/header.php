@@ -29,7 +29,6 @@
 			$about_us_color = "inherit";
 			$login_color = "inherit";
 	}
-	true;
 	?>
 
 
@@ -37,6 +36,7 @@
 		<div class=topbanner>
 		<h2>Think.</h2>
 
+		</div>
 		<ul class=navbar>
 			<li class=navitem><a <?PHP if ($home_active) {echo "class=active";} ?> href="/home.php">Home</a></li>
 			<li class=navitem><a <?PHP if ($about_active) {echo "class=active";} ?> href="/about-us.php">About Us</a></li>
