@@ -43,7 +43,8 @@ ul.navbar li.navitem a {
 }
 
 ul.navbar li.navitem a:hover {
-  background-color: #111;
+  background-color: azure;
+  color: black
 }
 
 .active {
