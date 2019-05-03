@@ -34,7 +34,7 @@
 
 
 	<div class=header>
-
+		<div class=topbanner>
 		<h2>Think.</h2>
 
 		<ul class=navbar>
