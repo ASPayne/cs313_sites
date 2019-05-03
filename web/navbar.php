@@ -30,7 +30,7 @@ switch ($current_file) {
         <a href="/about-us.php">About Us</a></li>
     <li class="navitem<?PHP echo $NavBarActive[" Pages"] /*if ($login_active) {echo " active" ;}*/ ?>">
         <a href="/pages.php">Pages</a></li>
-    <li style="float:right" class="navitem<?PHP echo $NavBarActive[" Login"] /*if ($login_active) {echo " active" ;}*/ ?>">
+    <li style="float:right; background-color:teal" class="navitem<?PHP echo $NavBarActive[" Login"] /*if ($login_active) {echo " active" ;}*/ ?>">
         <a href="/login.php">Login</a></li>
 </ul>
 <?PHP
