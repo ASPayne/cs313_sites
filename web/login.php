@@ -29,8 +29,6 @@ $_SESSION['user'] = $_POST['user'];
 			Name: <input type="text" name="user"><br>
 			<button type="submit">Temp Login as Admin</button>
 		</form>
-
-
 		<p>
 		</p>
 		<?PHP echo $_SESSION['user']; ?>

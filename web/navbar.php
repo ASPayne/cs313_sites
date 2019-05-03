@@ -2,45 +2,44 @@
 <?PHP
 $current_file = basename($_SERVER['PHP_SELF']);
 
-$NavBarActive = array("Home"=>"", "About"=>"", "login"=>"");
+$NavBarActive = array("Home" => "", "About" => "", "Pages" => "", "login" => "");
 /*echo "Peter is " . $age['Peter'] . " years old.";*/
- 
+
 switch ($current_file) {
     case "home.php":
         $NavBarActive["Home"] = " active";
-        //$home_active = true;
         break;
     case "about-us.php":
-    $NavBarActive["About"] = " active";
-        //$about_active = true;
+        $NavBarActive["About"] = " active";
         break;
     case "login.php":
-    $NavBarActive["Login"] = " active";
-        //$login_active = true;
+        $NavBarActive["Login"] = " active";
+        break;
+    case "pages.php":
+        $NavBarActive["Pages"] = " active";
         break;
     default:
-    $NavBarActive = array("Home"=>"", "About"=>"", "login"=>"");
-        //$home_active = false;
-        //$about_active = false;
-        //$login_active = false;
+        $NavBarActive = array("Home" => "", "About" => "", "Pages" => "", "login" => "");
 }
 ?>
 
 <ul class="navbar" style="top: 0px; position: relative;">
-    <li class="navitem<?PHP echo $NavBarActive["Home"] /*if ($home_active) {echo " active";}*/ ?>">
+    <li class="navitem<?PHP echo $NavBarActive[" Home"] /*if ($home_active) {echo " active" ;}*/ ?>">
         <a href="/home.php">Home</a></li>
-    <li class="navitem<?PHP echo $NavBarActive["About"]/*if ($about_active) { echo " active";}*/ ?>">
+    <li class="navitem<?PHP echo $NavBarActive[" About"] /*if ($about_active) { echo " active" ;}*/ ?>">
         <a href="/about-us.php">About Us</a></li>
-    <li class="navitem<?PHP echo $NavBarActive["Login"]/*if ($login_active) {echo " active";}*/ ?>">
-        <a href="/login.php">login</a></li>
+    <li class="navitem<?PHP echo $NavBarActive[" Pages"] /*if ($login_active) {echo " active" ;}*/ ?>">
+        <a href="/pages.php">Pages</a></li>
+    <li style="float:right" class="navitem<?PHP echo $NavBarActive[" Login"] /*if ($login_active) {echo " active" ;}*/ ?>">
+        <a href="/login.php">Login</a></li>
 </ul>
-<?PHP /*
-
-<div class="topnav">
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-</div>
+<?PHP
 
 
-*/?>
+
+
+
+
+
+
+?>
