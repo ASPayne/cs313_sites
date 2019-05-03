@@ -25,11 +25,9 @@
 	}
 	?>
 
-
-
 		<div class=topbanner>
-			<h1 style="color:cyan; font-family:'Times New Roman', Times, serif;">Think.</h1>
-			<h3>A company to think about.</h3>
+			<h1 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:x-large;">Think.</h1>
+			<p>A company to think about.</p>
 		</div>
 		<ul class=navbar>
 			<li class="navitem<?PHP if ($home_active) {echo " active";} ?>">

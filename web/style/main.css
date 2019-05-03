@@ -1,6 +1,16 @@
+
+
 header {
   background-color: azure;
   width: 100%;
+}
+
+body{
+  background-color: azure;
+}
+
+main{
+  padding: 5px;
 }
 
 .topbanner{

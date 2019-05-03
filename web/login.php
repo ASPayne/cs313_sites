@@ -11,12 +11,13 @@ include 'session.php';
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Login</title>
-	<?php
-include 'header.php';
-?>
+	
 </head>
 <body>
-
+<?php
+include 'header.php';
+?>
+<main>
 
 <form action="home.php" method="post">
 Name: <input type="text" name="<?PHP $_SESSION["user"] ?>"><br>
@@ -25,6 +26,6 @@ Name: <input type="text" name="<?PHP $_SESSION["user"] ?>"><br>
 
 <a href="/home.php">Log In as Administrator</a>
 <a href="/home.php">Log In as Tester</a>
-
+</main>
 </body>
 </html>

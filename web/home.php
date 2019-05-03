@@ -17,7 +17,9 @@ include 'session.php';
 <?php
 include 'header.php';
 ?>
+<main>
 	<h1>Welcome <?PHP echo $_SESSION["user"] ?>!</h1>
 	<p>You are not logged in.</p>
+</main>
 </body>
 </html>
