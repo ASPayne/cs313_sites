@@ -13,10 +13,10 @@
 			$home_active = true;
 			break;
 		case "about-us.php":
-			$home_active = true;
+			$about_active = true;
 			break;
 		case "login.php":
-			$home_active = true;
+			$login_active = true;
 			break;
 		default:
 		$home_active = false;
