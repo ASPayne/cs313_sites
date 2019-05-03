@@ -19,13 +19,6 @@ ul.navbar {
   top: 0;
 }
 
-.navbar .navitem {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 .navbar .activeitem {
   padding: 10px 15px 9px 15px !important;
   vertical-align: middle;
