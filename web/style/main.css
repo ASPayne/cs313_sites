@@ -1,4 +1,4 @@
-.header {
+header {
   background-color: azure;
   width: 100%;
 }
@@ -6,7 +6,6 @@
 .topbanner{
   height:72px;
 }
-
 
 ul.navbar {
   list-style-type: none;
@@ -18,14 +17,6 @@ ul.navbar {
   position: sticky;
   top: 0;
 }
-
-.navbar .activeitem {
-  padding: 10px 15px 9px 15px !important;
-  vertical-align: middle;
-  text-align: center;
-  background-color: blue;
-}
-
 
 ul.navbar li.navitem {
   float: left;

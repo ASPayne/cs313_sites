@@ -26,9 +26,9 @@
 	?>
 
 
-	<div class=header>
+
 		<div class=topbanner>
-			<h2>Think.</h2>
+			<h1 style="color:cyan; font-family:'Times New Roman', Times, serif;">Think.</h1>
 			<h3>A company to think about.</h3>
 		</div>
 		<ul class=navbar>
@@ -39,5 +39,5 @@
 			<li class="navitem<?PHP if ($login_active) {echo " active";} ?>">
 				<a href="/login.php">login</a></li>
 		</ul>
-	</div>
+
 </header>
