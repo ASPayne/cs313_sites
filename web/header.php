@@ -26,8 +26,10 @@
 	?>
 
 		<div class=topbanner>
+			::before
 			<h2 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px;">Think.</h2>
-			<p>A company to think about.</p>
+			<p style="float:right; letter-spacing:2px">A COMPANY TO THINK ABOUT</p>
+			::after
 		</div>
 		<ul class=navbar>
 			<li class="navitem<?PHP if ($home_active) {echo " active";} ?>">
