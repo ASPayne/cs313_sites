@@ -3,6 +3,8 @@
 //session_start();
 include 'session.php';
 
+$_SESSION['user'] = $_POST['user'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
