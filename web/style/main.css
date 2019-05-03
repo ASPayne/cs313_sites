@@ -51,6 +51,6 @@ ul.navbar li.navitem a:hover {
   color: black
 }
 
-a.active {
+ul.navbar li.navitem.active {
   background-color: Teal;
 }

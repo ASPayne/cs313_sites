@@ -34,13 +34,23 @@
 
 	<div class=header>
 		<div class=topbanner>
-		<h2>Think.</h2>
+			<h2>Think.</h2>
 
 		</div>
 		<ul class=navbar>
-			<li class=navitem><a <?PHP if ($home_active) {echo "class=active";} ?> href="/home.php">Home</a></li>
-			<li class=navitem><a <?PHP if ($about_active) {echo "class=active";} ?> href="/about-us.php">About Us</a></li>
-			<li class=navitem><a <?PHP if ($login_active) {echo "class=active";} ?> href="/login.php">login</a></li>
+			<li class="navitem<?PHP if ($home_active) {
+									echo " active";
+								} ?>">
+				<a href="/home.php">Home</a>
+			</li>
+			<li class="navitem<?PHP if ($about_active) {
+									echo " class=active";
+								} ?>">
+				<a href="/about-us.php">About Us</a></li>
+			<li class="navitem<?PHP if ($login_active) {
+									echo " class=active";
+								} ?>">
+				<a href="/login.php">login</a></li>
 		</ul>
 	</div>
 </header>
