@@ -38,7 +38,7 @@ switch ($current_file) {
 </ul>
 <header>
     <div class=topbanner>
-        <h2 style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px; display:block;">Think.</h2>
+        <bannerlogo style="color:mediumblue; font-family:'Times New Roman', Times, serif; font-size:60px; display:block;">Think.</bannerlogo>
         <p style="float:right; letter-spacing:2px; display:block;">A COMPANY TO THINK ABOUT</p>
     </div>
 

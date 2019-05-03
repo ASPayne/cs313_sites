@@ -1,20 +1,25 @@
-
-
 header {
   background-color: azure;
   width: 100%;
 }
 
-body{
+body {
   background-color: azure;
 }
 
-main{
+main {
   padding: 5px;
 }
 
-.topbanner{
+.topbanner {
   background-color: steelblue;
+}
+
+bannerlogo {
+  color: mediumblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  display: block;
 }
 
 ul.navbar {
@@ -42,7 +47,7 @@ ul.navbar li.navitem a {
 
 ul.navbar li.navitem a:hover {
   background-color: azure;
-  color: black
+  color: black;
 }
 
 ul.navbar li.navitem.active {

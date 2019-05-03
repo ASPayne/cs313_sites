@@ -19,10 +19,10 @@ $_SESSION['user'] = $_POST['user'];
 
 </head>
 
-<body>
 	<?php
 	include 'header.php';
 	?>
+<body>
 	<main>
 
 		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">

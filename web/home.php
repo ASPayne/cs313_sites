@@ -14,10 +14,10 @@ include 'session.php';
 	<title>Home</title>
 </head>
 
-<body>
 	<?php
 	include 'header.php';
 	?>
+<body>
 	<main>
 		<h1>Welcome
 			<?PHP echo $_SESSION["user"] ?>!</h1>

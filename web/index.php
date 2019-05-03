@@ -12,10 +12,10 @@ include 'session.php';
 	<title>Home</title>
 </head>
 
-<body>
 <?php
 include 'header.php';
 ?>
+<body>
 <main
 	<h1>Welcome!</h1>
 	<p>You are not logged in.</p>
