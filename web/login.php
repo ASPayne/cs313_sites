@@ -19,8 +19,12 @@ include 'header.php';
 ?>
 <main>
 
-<form action="home.php" method="post">
-Name: <input type="text" name="<?PHP $_SESSION["user"] ?>"><br>
+
+
+
+			
+<form action = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+Name: <input type="text" name="user"><br>
 <button type="submit">Temp Login as Admin</button>
 </form>
 
