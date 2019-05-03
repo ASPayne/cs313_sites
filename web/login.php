@@ -28,6 +28,11 @@ Name: <input type="text" name="user"><br>
 <button type="submit">Temp Login as Admin</button>
 </form>
 
+
+<p>
+</p>
+<?PHP echo $_SESSION['user']; ?>
+
 <a href="/home.php">Log In as Administrator</a>
 <a href="/home.php">Log In as Tester</a>
 </main>
