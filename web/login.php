@@ -19,10 +19,10 @@ $_SESSION['user'] = $_POST['user'];
 
 </head>
 
+<body>
 	<?php
 	include 'header.php';
 	?>
-<body>
 	<main>
 
 		<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
@@ -39,5 +39,8 @@ $_SESSION['user'] = $_POST['user'];
 		<a href="/home.php">Log In as Tester</a>
 	</main>
 </body>
+    <?php
+	include 'footer.php';
+	?>
 
 </html>
