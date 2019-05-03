@@ -28,6 +28,7 @@ if (isset($_POST['user'])) {
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             Name: <input type="text" name="user"><br>
             <button type="submit">Temp Login as Admin</button>
+            <button type="action" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); header('Refresh: 2; URL = login.php'); ?>" method="post"> test </button>
         </form>
         <p>
         </p>
