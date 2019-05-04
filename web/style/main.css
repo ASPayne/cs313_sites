@@ -103,7 +103,11 @@ ul.navbar li.navitem.login li.navitem.active {
 .footer {
   height: 20px;
   background-color: #4c4c4c;
+  color: #f2f1f0;
   padding: 10px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 /* to be used at a later time*/
