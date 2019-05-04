@@ -16,7 +16,7 @@ include 'session.php';
 <?php
 include 'header.php';
 
-header('Refresh: 0; URL = login.php');
+header('Refresh: 0; URL = home.php');
 	include 'footer.php';
 	?>
 </body>
