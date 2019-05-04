@@ -15,13 +15,8 @@ include 'session.php';
 <body>
 <?php
 include 'header.php';
-?>
-<main
-	<h1>Welcome!</h1>
-	<p>You are not logged in.</p>
-</main>
 
-<?php
+header('Refresh: 0; URL = login.php');
 	include 'footer.php';
 	?>
 </body>
