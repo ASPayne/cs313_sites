@@ -88,8 +88,9 @@ ul.navbar li.navitem.active {
     color: chartreuse;   
 }
 .diceimage{
-    box-sizing: inherit;
     position: absolute;
+    width: inherit;
+    height: inherit;
     top: 0%;
 }
 .center {
