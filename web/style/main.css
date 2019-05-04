@@ -5,7 +5,7 @@ header {
 
 body {
   background-color: #f2f1f0;
-  color: #3C3C3C;
+  color: #3c3c3c;
   margin: 0px;
 }
 
@@ -22,7 +22,8 @@ ul.navbar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16),0 10px 20px 0 rgba(0,0,0,0.12);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16),
+    0 10px 20px 0 rgba(0, 0, 0, 0.12);
 }
 
 ul.navbar li.navitem {
@@ -43,19 +44,19 @@ ul.navbar li.navitem a:hover {
 }
 
 ul.navbar li.navitem.active {
-  background-color: #E95420;
+  background-color: #e95420;
 }
 
-ul.navbar li.navitem.login{
-    float:right;
-    background-color:#AEA79F;
-    color: #3C3C3C;
+ul.navbar li.navitem.login {
+  float: right;
+  background-color: #aea79f;
+  color: #3c3c3c;
 }
 
-ul.navbar li.navitem.login li.navitem.active{
-    float:right;
-    background-color: #E95420;
-    color: #3C3C3C;
+ul.navbar li.navitem.login li.navitem.active {
+  float: right;
+  background-color: #e95420;
+  color: #3c3c3c;
 }
 
 .topbanner {
@@ -63,7 +64,7 @@ ul.navbar li.navitem.login li.navitem.active{
 }
 
 .bannerlogo {
-  color: #AEA79F;
+  color: #aea79f;
   font-family: "Times New Roman", Times, serif;
   font-size: 60px;
   display: block;
@@ -100,13 +101,14 @@ ul.navbar li.navitem.login li.navitem.active{
 
 /* Style the footer */
 .footer {
-    height: 5%;
+  height: 20px;
   background-color: #4c4c4c;
   padding: 10px;
 }
 
-.gtk_color_scheme {
-  /*@define-color bg_color #f2f1f0;
+/* to be used at a later time*/
+/*.gtk_color_scheme {
+@define-color bg_color #f2f1f0;
 @define-color fg_color #4c4c4c;
 @define-color base_color #ffffff;
 @define-color text_color #3C3C3C;
@@ -114,5 +116,4 @@ ul.navbar li.navitem.login li.navitem.active{
 @define-color selected_fg_color #ffffff;
 @define-color tooltip_bg_color #000000;
 @define-color tooltip_fg_color #ffffff;
-*/
-}
+}*/

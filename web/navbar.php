@@ -2,7 +2,7 @@
 <?PHP
 $current_file = basename($_SERVER['PHP_SELF']);
 
-$NavBarActive = array("Home" => " ", "About" => " ", "Pages" => " ", "login" => " login");
+$NavBarActive = array("Home" => " ", "About" => " ", "Pages" => " ", "login" => " ");
 /*echo "Peter is " . $age['Peter'] . " years old.";*/
 
 switch ($current_file) {
@@ -20,7 +20,7 @@ switch ($current_file) {
         $NavBarActive["Pages"] = " active";
         break;
     default:
-        $NavBarActive = array("Home" => " ", "About" => " ", "Pages" => " ", "login" => " login");
+        $NavBarActive = array("Home" => " ", "About" => " ", "Pages" => " ", "login" => " ");
 }
 ?>
 
@@ -31,6 +31,6 @@ switch ($current_file) {
         <a href="/about-us.php">About Us</a></li>
     <li class="navitem<?PHP echo $NavBarActive["Pages"]; /*if ($login_active) {echo " active" ;}*/ ?> ">
         <a href="/pages.php">Pages</a></li>
-    <li  class="navitem <?PHP echo $NavBarActive["Login"]; /*if ($login_active) {echo " active" ;}*/ ?>">
+    <li  class="navitem login<?PHP echo $NavBarActive["Login"]; /*if ($login_active) {echo " active" ;}*/ ?>">
         <a href="/login.php">Login</a></li>
 </ul>
