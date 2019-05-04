@@ -1,51 +1,16 @@
 header {
-  background-color: azure;
+  background-color: #4c4c4c;
   width: 100%;
 }
 
 body {
-  background-color: azure;
+  background-color: #f2f1f0;
+  color: #3C3C3C;
   margin: 0px;
-}
-/* Style the content */
-.content {
-  background-color: #ddd;
-  padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
-}
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
 }
 
 main {
   padding: 5px;
-}
-
-/* Style the content */
-.content {
-  background-color: #ddd;
-  padding: 10px;
-  height: 200px; /* Should be removed. Only for demonstration */
-}
-
-/* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-
-.topbanner {
-  background-color: steelblue;
-}
-
-.bannerlogo {
-  color: mediumblue;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 60px;
-  display: block;
 }
 
 ul.navbar {
@@ -53,7 +18,7 @@ ul.navbar {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: inherit;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -65,7 +30,7 @@ ul.navbar li.navitem {
 
 ul.navbar li.navitem a {
   display: block;
-  color: white;
+  color: #f2f1f0;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -77,27 +42,64 @@ ul.navbar li.navitem a:hover {
 }
 
 ul.navbar li.navitem.active {
-  background-color: Teal;
+  background-color: #f07746;
 }
 
-.diceContainer{
-    position: relative;
-    background-color: darkblue;
-    width: 100px;
-    height: 100px;
-    color: black;   
+.topbanner {
+  background-color: inherit;
 }
-.diceimage{
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    top: 0%;
+
+.bannerlogo {
+  color: #3C3C3C;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 60px;
+  display: block;
+}
+
+/* Style the content */
+.content {
+  background-color: #ddd;
+  padding: 10px;
+  height: 200px; /* Should be removed. Only for demonstration */
+}
+
+.diceContainer {
+  position: relative;
+  background-color: darkblue;
+  width: 100px;
+  height: 100px;
+  color: black;
+}
+.diceimage {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  top: 0%;
 }
 .center {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 20px;
-    top: 35%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  top: 35%;
+}
+
+/* Style the footer */
+.footer {
+    height: 5%;
+  background-color: #4c4c4c;
+  padding: 10px;
+}
+
+.gtk_color_scheme {
+  /*@define-color bg_color #f2f1f0;
+@define-color fg_color #4c4c4c;
+@define-color base_color #ffffff;
+@define-color text_color #3C3C3C;
+@define-color selected_bg_color #f07746;
+@define-color selected_fg_color #ffffff;
+@define-color tooltip_bg_color #000000;
+@define-color tooltip_fg_color #ffffff;
+*/
 }
