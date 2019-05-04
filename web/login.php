@@ -24,11 +24,13 @@ if (isset($_POST['user'])) {
     include 'header.php';
     ?>
     <main>
-
+        <h2> This Page Is Under Construction. The following are attempts to make a login process work. </h2>
+        <hr>
+<br>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             Name: <input type="text" name="user"><br>
             <button type="submit">Temp Login as Admin</button>
-            <button type="action" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); header('Refresh: 2; URL = login.php'); ?>" method="post"> test </button>
+            <button type="action" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post"> test </button>
         </form>
         <p>
         </p>
