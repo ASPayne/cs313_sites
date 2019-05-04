@@ -85,7 +85,7 @@ ul.navbar li.navitem.active {
     background-color: darkblue;
     width: 100px;
     height: 100px;
-    color: chartreuse;   
+    color: black;   
 }
 .diceimage{
     position: absolute;
@@ -96,9 +96,8 @@ ul.navbar li.navitem.active {
 .center {
     position: absolute;
     left: 0;
-    height: 50%;
-    width: 50%;
+    width: 100%;
     text-align: center;
-    font-size: 40px;
-    top: 50%;
+    font-size: 20px;
+    top: 35%;
 }
