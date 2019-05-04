@@ -88,3 +88,14 @@ ul.navbar li.navitem.active {
 .diceimage{
     width: -moz-available;
 }
+.center {
+
+    position: absolute;
+    left: 0;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    top: 50%;
+
+}
