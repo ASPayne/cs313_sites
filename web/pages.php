@@ -2,7 +2,9 @@
 // Start the session
 session_start();
 ?>
+
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style/main.css">
 <html lang="en">
 
 <head>
@@ -17,7 +19,10 @@ session_start();
 	include 'header.php';
 	?>
 	<main>
-		<h1>Welcome! this will have future assignments.</h1>
+        <h1>Welcome! this will have future assignments.</h1>
+        <?PHP
+        include 'dice.php';
+        ?>
 	</main>
     <?php
 	include 'footer.php';
