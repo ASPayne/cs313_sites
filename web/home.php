@@ -24,7 +24,11 @@ include 'session.php';
 		<p>You are
 			<?PHP if (!isset($_SESSION['user'])) {
 				echo "not";
-			} ?> logged in.</p>
+            } ?> logged in.</p>
+            
+        <?PHP
+        include 'dice.php';
+        ?>
 	</main>
     <?php
 	include 'footer.php';

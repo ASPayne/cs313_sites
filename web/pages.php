@@ -20,9 +20,6 @@ session_start();
 	?>
 	<main>
         <h1>Welcome! this will have future assignments.</h1>
-        <?PHP
-        include 'dice.php';
-        ?>
 	</main>
     <?php
 	include 'footer.php';

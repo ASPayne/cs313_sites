@@ -82,6 +82,9 @@ ul.navbar li.navitem.active {
 
 .diceContainer{
     background-color: darkblue;
-    width: 40%;
-    height: 40%;   
+    width: 15%;
+    height: 15%;   
+}
+.diceimage{
+    width: -moz-available;
 }
