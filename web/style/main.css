@@ -22,6 +22,7 @@ ul.navbar {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16),0 10px 20px 0 rgba(0,0,0,0.12);
 }
 
 ul.navbar li.navitem {
@@ -42,7 +43,19 @@ ul.navbar li.navitem a:hover {
 }
 
 ul.navbar li.navitem.active {
-  background-color: #f07746;
+  background-color: #E95420;
+}
+
+ul.navbar li.navitem.login{
+    float:right;
+    background-color:#AEA79F;
+    color: #3C3C3C;
+}
+
+ul.navbar li.navitem.login li.navitem.active{
+    float:right;
+    background-color: #E95420;
+    color: #3C3C3C;
 }
 
 .topbanner {
@@ -50,7 +63,7 @@ ul.navbar li.navitem.active {
 }
 
 .bannerlogo {
-  color: #3C3C3C;
+  color: #AEA79F;
   font-family: "Times New Roman", Times, serif;
   font-size: 60px;
   display: block;
