@@ -7,6 +7,7 @@ $NavBarActive = array("Home" => "", "About" => "", "Pages" => "", "login" => "")
 
 switch ($current_file) {
     case "home.php":
+    case "index.php";
         $NavBarActive["Home"] = " active";
         break;
     case "about-us.php":

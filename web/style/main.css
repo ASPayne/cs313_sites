@@ -81,7 +81,24 @@ ul.navbar li.navitem.active {
 }
 
 .diceContainer{
+    position: relative;
     background-color: darkblue;
-    width: 40%;
-    height: 40%;   
+    width: 100px;
+    height: 100px;
+    color: chartreuse;   
+}
+.diceimage{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0%;
+}
+.center {
+    position: absolute;
+    left: 0;
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    font-size: 40px;
+    top: 50%;
 }
