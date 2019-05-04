@@ -25,12 +25,12 @@ switch ($current_file) {
 ?>
 
 <ul class="navbar" style="top: 0px; position: relative;">
-    <li class="navitem<?PHP echo $NavBarActive[" Home"]; /*if ($home_active) {echo " active" ;}*/ ?>">
+    <li class="navitem<?PHP echo($NavBarActive["Home"]); /*if ($home_active) {echo " active" ;}*/ ?> ">
         <a href="/home.php">Home</a></li>
-    <li class="navitem<?PHP echo $NavBarActive[" About"]; /*if ($about_active) { echo " active" ;}*/ ?>">
+    <li class="navitem<?PHP echo $NavBarActive["About"]; /*if ($about_active) { echo " active" ;}*/ ?> ">
         <a href="/about-us.php">About Us</a></li>
-    <li class="navitem<?PHP echo $NavBarActive[" Pages"]; /*if ($login_active) {echo " active" ;}*/ ?>">
+    <li class="navitem<?PHP echo $NavBarActive["Pages"]; /*if ($login_active) {echo " active" ;}*/ ?> ">
         <a href="/pages.php">Pages</a></li>
-    <li style="float:right; background-color:teal" class="navitem<?PHP echo $NavBarActive[" Login"]; /*if ($login_active) {echo " active" ;}*/ ?>">
+    <li style="float:right; background-color:teal" class="navitem <?PHP echo $NavBarActive["Login"]; /*if ($login_active) {echo " active" ;}*/ ?>">
         <a href="/login.php">Login</a></li>
 </ul>
