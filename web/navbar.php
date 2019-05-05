@@ -3,7 +3,6 @@
 $current_file = basename($_SERVER['PHP_SELF']);
 
 $NavBarActive = array("Home" => " ", "About" => " ", "Pages" => " ", "login" => " ");
-/*echo "Peter is " . $age['Peter'] . " years old.";*/
 
 switch ($current_file) {
     case "home.php":
@@ -24,7 +23,7 @@ switch ($current_file) {
 }
 ?>
 
-<ul class="navbar" style="top: 0px; position: relative;">
+<ul class="navbar">
     <li class="navitem<?PHP echo($NavBarActive["Home"]); /*if ($home_active) {echo " active" ;}*/ ?> ">
         <a href="/home.php">Home</a></li>
     <li class="navitem<?PHP echo $NavBarActive["About"]; /*if ($about_active) { echo " active" ;}*/ ?> ">

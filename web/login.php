@@ -2,11 +2,9 @@
 // Start the session
 //session_start();
 include 'session.php';
-
 if (isset($_POST['user'])) {
     $_SESSION['user'] = $_POST['user'];
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +24,7 @@ if (isset($_POST['user'])) {
     <main>
         <h2> This Page Is Under Construction. The following are attempts to make a login process work. </h2>
         <hr>
-<br>
+        <br>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
             Name: <input type="text" name="user"><br>
             <button type="submit">Temp Login as Admin</button>
@@ -38,9 +36,6 @@ if (isset($_POST['user'])) {
 
         <a href="/home.php">Log In as Administrator</a>
         <a href="/home.php">Log In as Tester</a>
-
-
-
         <br>
         <br>
         <br>
@@ -90,5 +85,4 @@ if (isset($_POST['user'])) {
 <?php
 include 'footer.php';
 ?>
-
 </html>
