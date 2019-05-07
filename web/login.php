@@ -1,22 +1,10 @@
 <?PHP
 // Start the session
-session_start();
-//include 'session.php';
-//if (isset($_POST['user'])) {
-//    $_SESSION['user'] = $_POST['user'];
-//}
-
-//function login_as_admin()
-//{
-//    $_SESSION['user'] = "Admin";
-//}
-
-//function login_as_tester()
-//{
-//    $_SESSION['user'] = "Tester";
-//}
-
-
+//session_start();
+include 'session.php';
+if (isset($_POST['user'])) {
+    $_SESSION['user'] = $_POST['user'];
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,32 +25,25 @@ session_start();
         <h2> This Page Is Under Construction. The following are attempts to make a login process work. </h2>
         <hr>
         <br>
-        <form action="<?php $_SESSION['user'] = "Admin"; echo $_SESSION['user'];?>" method="post">
-            <button type="submit">Login as Admin</button>
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+            Name: <input type="text" name="user"><br>
+            <button type="submit">Temp Login as Admin</button>
+            <button type="action" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post"> test </button>
         </form>
-
-        <form action="<?php $_SESSION['user'] = "Tester"; echo $_SESSION['user'];?>" method="post">
-            <button type="submit">Login as Tester</button>
-        </form>
-
-        
-        Click <a href="logout.php" title="Logout">here</a> to clean Session.
-        
         <p>
         </p>
         <?PHP echo $_SESSION['user']; ?>
-        <br>
-        <hr>
-        <!-- <br>
+
+        <a href="/home.php">Log In as Administrator</a>
         <a href="/home.php">Log In as Tester</a>
         <br>
         <br>
         <br>
         <h2>Enter Username and Password</h2>
-        <div class="container form-signin"> -->
+        <div class="container form-signin">
 
             <?php
-            /*$msg = '';
+            $msg = '';
 
             if (
                 isset($_POST['login']) && !empty($_POST['username'])
@@ -81,11 +62,11 @@ session_start();
                 } else {
                     $msg = 'Wrong username or password';
                 }
-            }*/
+            }
             ?>
         </div> <!-- /container -->
 
-        <!-- <div class="container">
+        <div class="container">
 
             <form class="form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);
                                                             ?>" method="post">
@@ -97,7 +78,7 @@ session_start();
 
             Click here to clean <a href="logout.php" title="Logout">Session.
 
-        </div> -->
+        </div>
     </main>
 
 </body>
