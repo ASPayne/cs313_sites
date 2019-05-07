@@ -37,11 +37,11 @@ function login_as_tester()
         <h2> This Page Is Under Construction. The following are attempts to make a login process work. </h2>
         <hr>
         <br>
-        <form action="<?php login_as_admin(); ?>" method="post">
+        <form action="<?php $_SESSION['user'] = "Admin"; ?>" method="post">
             <button type="submit">Login as Admin</button>
         </form>
 
-        <form action="<?php login_as_tester(); ?>" method="post">
+        <form action="<?php $_SESSION['user'] = "Tester"; ?>" method="post">
             <button type="submit">Login as Tester</button>
         </form>
 
