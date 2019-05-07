@@ -40,7 +40,7 @@ include '../../header.php';
 
 <br>
 <textarea name="Comments" rows="5" cols="40" placeholder="Enter Comments Here"></textarea>
-
+<button type="submit" name="Submit" value="Submit">Submit</button>
 </form>
 <br>
 
