@@ -6,15 +6,15 @@ session_start();
 //    $_SESSION['user'] = $_POST['user'];
 //}
 
-function login_as_admin()
-{
-    $_SESSION['user'] = "Admin";
-}
+//function login_as_admin()
+//{
+//    $_SESSION['user'] = "Admin";
+//}
 
-function login_as_tester()
-{
-    $_SESSION['user'] = "Tester";
-}
+//function login_as_tester()
+//{
+//    $_SESSION['user'] = "Tester";
+//}
 
 
 ?>
