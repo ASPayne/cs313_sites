@@ -28,9 +28,9 @@ include '../../header.php';
 
 <form method="post" action="<?PHP htmlspecialchars($_SERVER["PHP_SELF"]); ?>" > 
 
-<input type="text" placeholder="Name">
+<input type="text" placeholder="Name" name="Name">
 <br>
-<input tyoe="text" placeholder="Email">
+<input tyoe="text" placeholder="Email" name="Email">
 <br>
 
 <input type="radio" value="CS"  name="Major"> Computer Science
@@ -48,7 +48,7 @@ include '../../header.php';
 NAME = <?PHP echo $NAME ?> <br>
 EMAIL = <?PHP echo $EMAIL ?> <br>
 MAJOR = <?PHP echo $MAJOR ?>  <br>
-COMMENT = <?PHP echo $COMMENTS ?> <br>
+COMMENT = <?PHP echo $COMMENT ?> <br>
 <br>
 <!-- visited = <?PHP //echo $VISITED ?> -->
 </p>
