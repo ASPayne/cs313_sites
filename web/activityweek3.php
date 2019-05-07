@@ -13,14 +13,17 @@
 <form>
 
 <input type="text" placeholder="Name">
+<br>
 <input tyoe="text" placeholder="Email">
+<br>
 
 <input type="radio" value="CS"  name="Major"> Computer Science
 <input type="radio" value="WDD" name="Major"> Web Design and Development
 <input type="radio" value="CIT" name="Major"> Computer Information Technology
 <input type="radio" value="CE"  name="Major"> Computer Engineering
 
-<textarea name="Comments" rows="5" cols="40"> </textarea>
+<br>
+<textarea name="Comments" rows="5" cols="40" placeholder="Enter Comments Here"></textarea>
 
 </form>
     
