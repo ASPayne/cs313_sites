@@ -37,16 +37,17 @@ session_start();
         <h2> This Page Is Under Construction. The following are attempts to make a login process work. </h2>
         <hr>
         <br>
-        <form action="<?php $_SESSION['user'] = "Admin"; ?>" method="post">
+        <form action="<?php $_SESSION['user'] = "Admin"; echo $_SESSION['user'];?>" method="post">
             <button type="submit">Login as Admin</button>
         </form>
 
-        <form action="<?php $_SESSION['user'] = "Tester"; ?>" method="post">
+        <form action="<?php $_SESSION['user'] = "Tester"; echo $_SESSION['user'];?>" method="post">
             <button type="submit">Login as Tester</button>
         </form>
 
         
         Click <a href="logout.php" title="Logout">here</a> to clean Session.
+        
         <p>
         </p>
         <?PHP echo $_SESSION['user']; ?>
