@@ -38,14 +38,15 @@ function login_as_tester()
         <hr>
         <br>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'].login_as_admin()); ?>" method="post">
-            Name: <input type="text" name="user"><br>
             <button type="submit">Login as Admin</button>
         </form>
 
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'].login_as_tester()); ?>" method="post">
-            Name: <input type="text" name="user"><br>
             <button type="submit">Login as Tester</button>
         </form>
+
+        
+        Click here to clean <a href="logout.php" title="Logout">Session.
         <p>
         </p>
         <?PHP echo $_SESSION['user']; ?>
