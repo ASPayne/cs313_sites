@@ -46,10 +46,10 @@ function login_as_tester()
         </form>
 
         
-        Click here to clean <a href="logout.php" title="Logout">Session.
+        Click <a href="logout.php" title="Logout">here</a> to clean Session.
         <p>
         </p>
-        <?PHP echo $_SESSION['user']; ?>
+        <?PHP echo $_SESSION["user"]; ?>
         <br>
         <hr>
         <br>
