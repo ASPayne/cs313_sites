@@ -15,10 +15,10 @@
 <input type="text" placeholder="Name">
 <input tyoe="text" placeholder="Email">
 
-<input type="radio" value="CS"  name="Major">
-<input type="radio" value="WDD" name="Major">
-<input type="radio" value="CIT" name="Major">
-<input type="radio" value="CE"  name="Major">
+<input type="radio" value="CS"  name="Major"> Computer Science
+<input type="radio" value="WDD" name="Major"> Web Design and Development
+<input type="radio" value="CIT" name="Major"> Computer Information Technology
+<input type="radio" value="CE"  name="Major"> Computer Engineering
 
 <textarea name="Comments" rows="5" cols="40"> </textarea>
 
