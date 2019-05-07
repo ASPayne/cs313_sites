@@ -52,16 +52,16 @@ session_start();
         <?PHP echo $_SESSION['user']; ?>
         <br>
         <hr>
-        <br>
+        <!-- <br>
         <a href="/home.php">Log In as Tester</a>
         <br>
         <br>
         <br>
         <h2>Enter Username and Password</h2>
-        <div class="container form-signin">
+        <div class="container form-signin"> -->
 
             <?php
-            $msg = '';
+            /*$msg = '';
 
             if (
                 isset($_POST['login']) && !empty($_POST['username'])
@@ -80,11 +80,11 @@ session_start();
                 } else {
                     $msg = 'Wrong username or password';
                 }
-            }
+            }*/
             ?>
         </div> <!-- /container -->
 
-        <div class="container">
+        <!-- <div class="container">
 
             <form class="form-signin" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);
                                                             ?>" method="post">
@@ -96,7 +96,7 @@ session_start();
 
             Click here to clean <a href="logout.php" title="Logout">Session.
 
-        </div>
+        </div> -->
     </main>
 
 </body>
