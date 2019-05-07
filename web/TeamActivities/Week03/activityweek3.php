@@ -42,8 +42,8 @@ include '../../header.php';
 <textarea name="Comments" rows="5" cols="40" placeholder="Enter Comments Here"></textarea>
 <br>
 
-<input type="checkbox" name="Visited[]" value="NAmerica">North America<br>
-<input type="checkbox" name="Visited[]" value="SAmerica">South America<br>
+<input type="checkbox" name="Visited[]" value="North America">North America<br>
+<input type="checkbox" name="Visited[]" value="South America">South America<br>
 <input type="checkbox" name="Visited[]" value="Europe">Europe<br>
 <input type="checkbox" name="Visited[]" value="Asia">Asia<br>
 <input type="checkbox" name="Visited[]" value="Australia">Australia<br>
@@ -53,12 +53,8 @@ include '../../header.php';
 
 <button type="submit" name="Submit" value="Submit">Submit</button>
 
-
-
 </form>
 <br>
-
-
 
 
 <hr>
@@ -67,7 +63,7 @@ NAME = <?PHP echo $NAME ?> <br>
 EMAIL = <?PHP echo $EMAIL ?> <br>
 MAJOR = <?PHP echo $MAJOR ?>  <br>
 COMMENT = <?PHP echo $COMMENT ?> <br>
-VISITED = <?PHP echo implode(',',$_POST['Visited']); ?>
+VISITED = <?PHP echo implode(', ',$_POST['Visited']); ?>
 </p>
 
 
