@@ -67,7 +67,7 @@ NAME = <?PHP echo $NAME ?> <br>
 EMAIL = <?PHP echo $EMAIL ?> <br>
 MAJOR = <?PHP echo $MAJOR ?>  <br>
 COMMENT = <?PHP echo $COMMENT ?> <br>
-VISITED = <?PHP print_r($_POST['Visited']); ?>
+VISITED = <?PHP echo implode(',',$_POST['Visited']); ?>
 </p>
 
 
