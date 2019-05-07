@@ -18,7 +18,7 @@ $EMAIL = $_POST["Email"];
 $MAJOR = $_POST["Major"];
 $COMMENT = $_POST["Comments"];
 
-//$VISITED  = $_POST["Visited"];
+$VISITED  = $_POST["Visited"];
 
 }
 
@@ -44,13 +44,23 @@ include '../../header.php';
 </form>
 <br>
 
+
+<input type="checkbox" name="Visited[]" value="NAmerica">
+<input type="checkbox" name="Visited[]" value="SAmerica">
+<input type="checkbox" name="Visited[]" value="Europe">
+<input type="checkbox" name="Visited[]" value="Asia">
+<input type="checkbox" name="Visited[]" value="Australia">
+<input type="checkbox" name="Visited[]" value="Africa">
+<input type="checkbox" name="Visited[]" value="Antarctica">
+
+
+<hr>
 <p>
 NAME = <?PHP echo $NAME ?> <br>
 EMAIL = <?PHP echo $EMAIL ?> <br>
 MAJOR = <?PHP echo $MAJOR ?>  <br>
 COMMENT = <?PHP echo $COMMENT ?> <br>
-<br>
-<!-- visited = <?PHP //echo $VISITED ?> -->
+VISITED = <?PHP print_r($_POST['Visited']); ?>
 </p>
 
 
