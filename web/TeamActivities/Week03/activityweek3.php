@@ -40,18 +40,25 @@ include '../../header.php';
 
 <br>
 <textarea name="Comments" rows="5" cols="40" placeholder="Enter Comments Here"></textarea>
+<br>
+
+<input type="checkbox" name="Visited[]" value="NAmerica">North America<br>
+<input type="checkbox" name="Visited[]" value="SAmerica">South America<br>
+<input type="checkbox" name="Visited[]" value="Europe">Europe<br>
+<input type="checkbox" name="Visited[]" value="Asia">Asia<br>
+<input type="checkbox" name="Visited[]" value="Australia">Australia<br>
+<input type="checkbox" name="Visited[]" value="Africa">Africa<br>
+<input type="checkbox" name="Visited[]" value="Antarctica">Antarctica<br>
+<br>
+
 <button type="submit" name="Submit" value="Submit">Submit</button>
+
+
+
 </form>
 <br>
 
 
-<input type="checkbox" name="Visited[]" value="NAmerica">
-<input type="checkbox" name="Visited[]" value="SAmerica">
-<input type="checkbox" name="Visited[]" value="Europe">
-<input type="checkbox" name="Visited[]" value="Asia">
-<input type="checkbox" name="Visited[]" value="Australia">
-<input type="checkbox" name="Visited[]" value="Africa">
-<input type="checkbox" name="Visited[]" value="Antarctica">
 
 
 <hr>
