@@ -1,10 +1,10 @@
 <?PHP
 // Start the session
-//session_start();
-include 'session.php';
-if (isset($_POST['user'])) {
-    $_SESSION['user'] = $_POST['user'];
-}
+session_start();
+//include 'session.php';
+//if (isset($_POST['user'])) {
+//    $_SESSION['user'] = $_POST['user'];
+//}
 
 function login_as_admin()
 {
