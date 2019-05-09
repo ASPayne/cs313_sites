@@ -22,7 +22,7 @@ session_start();
 		<h1>Welcome! this will have future assignments.</h1>
 		
 		<br>
-		<a href="Week3/week03.php">week 3 store</a>
+		<a href="web/week3/week03.php">week 3 store</a>
 	</main>
     <?php
 	include 'footer.php';
