@@ -19,7 +19,10 @@ session_start();
 	include 'header.php';
 	?>
 	<main>
-        <h1>Welcome! this will have future assignments.</h1>
+		<h1>Welcome! this will have future assignments.</h1>
+		
+		<br>
+		<a href="Week3/week03.php">week 3 store</a>
 	</main>
     <?php
 	include 'footer.php';
