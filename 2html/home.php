@@ -15,19 +15,22 @@ include 'session.php';
     <title>Home</title>
 </head>
 
+<body>
     <?php
     include 'header.php';
     ?>
-<body>
     <main>
-        <h1>Azami Welcomes you!</h1>
-        <br>
-        <img src="/images/azami-lady-of-scrolls.png" />
+        <h1>Welcome<!</h1>
+        <p>You are
+            <?PHP if (!isset($_SESSION['user'])) {
+                echo "not";
+            } ?> logged in.</p>
+
         <?PHP
         include 'dice.php';
         ?>
     </main>
-</body>
     <?php
     include 'footer.php';
     ?>
+</body>

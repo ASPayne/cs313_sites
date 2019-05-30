@@ -23,7 +23,6 @@ session_start();
 		
 		<br>
 		<a href="/week3/week03_Store.php">week 3 store</a>
-		<a href="/TeamActivities/Week05/activityweek05.php"> week 5 database select</a>
 	</main>
     <?php
 	include 'footer.php';

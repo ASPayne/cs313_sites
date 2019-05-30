@@ -7,12 +7,16 @@
 	<title>About Us</title>
 </head>
 
-<body>
 <?php
 include 'header.php';
 ?>
-<h1>Think. About Us.
+<body>
+<h1>About this site:
 </h1>
-<p>Think. Inc. was established in 2018 by a bunch of BYU-I students who are trying to pass the backend web developmet class. We hope you enjoy our about us page and look forward to working with you.</p>
+<p>Having had an idea for a personal project back in 2017 to create an application to manage Magic The Gathering cards a player may own, Andrew decided to continue to implement such a interface for his University back-end web development class
+</p>
 </body>
+<?php
+include 'footer.php';
+?>
 </html>

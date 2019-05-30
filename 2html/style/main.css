@@ -6,7 +6,7 @@ header {
 body {
   background-color: #f2f1f0;
   color: #3c3c3c;
-  margin: auto;
+  margin: 0px;
 }
 
 main {
@@ -106,8 +106,7 @@ ul.navbar li.navitem.login li.navitem.active {
   color: #f2f1f0;
   margin-top: 20px;
   padding-top: 10px;
-  padding-bottom: 20px;
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0px;
   width: 100%;
   text-align: center;
@@ -116,49 +115,6 @@ ul.navbar li.navitem.login li.navitem.active {
   position: absolute;
   text-align: center;
   top: 30%;
-}
-.copyright {
-  font-size: 10px;
-  padding-bottom: 8px;
-}
-
-div.deckview {
-  max-width: 400px;
-  margin: auto;
-  background-color: #3c3c3c;
-  color: #f2f1f0;
-  overflow-y: auto;
-  padding: 15px;
-}
-
-div.deckview #deckviewtable {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-#deckviewtable td, #deckviewtable th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#deckviewtable tr:hover {background-color: #4c4c4c;}
-
-#deckviewtable th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #e95420;
-  color: #3c3c3c;
-}
-
-div.cardview{
-  max-width: 400px;
-  margin: auto;
-  background-color: #8c8c8c;
-  color: #3c3c3c;
-  overflow-y: auto;
-  padding: 15px;
 }
 
 /* to be used at a later time*/
