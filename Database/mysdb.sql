@@ -22,7 +22,7 @@ INSERT INTO public.USER (
 id             	
 ,username       	
 ,password       	
-,display_name	
+,display_name
 ,created_by     	
 ,creation_date  	
 ,last_updated_by 
@@ -45,6 +45,7 @@ ALTER TABLE PUBLIC.USER
 ALTER TABLE PUBLIC.USER
 	ALTER COLUMN last_updated_by REFERENCES public.user(id);
 
+Drop TABLE public.Card_types;
 
 CREATE TABLE public.card_types
 (

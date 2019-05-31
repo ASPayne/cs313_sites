@@ -1,7 +1,6 @@
 
 <?PHP
 session_start();
-include 'cardquery.php';
 ?>
 
 <!DOCTYPE html>
@@ -16,6 +15,7 @@ include 'cardquery.php';
 
 <?PHP
 include '../header.php';
+include 'cardquery.php';
 ?>
 
 <body>
