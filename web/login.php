@@ -1,10 +1,7 @@
 <?PHP
 // Start the session
-//session_start();
-include 'session.php';
-if (isset($_POST['user'])) {
-    $_SESSION['user'] = $_POST['user'];
-}
+session_start();
+require('databaseconnect.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +11,6 @@ if (isset($_POST['user'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
-
 </head>
 
 <body>
@@ -22,23 +18,6 @@ if (isset($_POST['user'])) {
     include 'header.php';
     ?>
     <main>
-        <h2> This Page Is Under Construction. The following are attempts to make a login process work. </h2>
-        <hr>
-        <br>
-        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-            Name: <input type="text" name="user"><br>
-            <button type="submit">Temp Login as Admin</button>
-            <button type="action" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post"> test </button>
-        </form>
-        <p>
-        </p>
-        <?PHP echo $_SESSION['user']; ?>
-
-        <a href="/home.php">Log In as Administrator</a>
-        <a href="/home.php">Log In as Tester</a>
-        <br>
-        <br>
-        <br>
         <h2>Enter Username and Password</h2>
         <div class="container form-signin">
 

@@ -16,9 +16,15 @@ session_start();
 <?PHP
 include '../header.php';
 include 'cardquery.php';
+echo $GLOBALS['url'];
+echo "<br>" . (sizeof($card)-1);
+//echo findbyname('Fog');
+echo $card['imageUrl'];
+var_dump($cards);
 ?>
 
 <body>
+    
 <div class="cardview">    
 <img src="<?PHP echo $card['imageUrl'];?>" alt="<?PHP echo $card['name'];?>" style="float:left;margin-right:15px;">
 <h1> <?PHP echo $card['name'];?> </h1>

@@ -8,7 +8,7 @@ require("databaseconnect.php");
 
 try{
 
-$query = 'INSERT INTO customInventory(id, cardname, cardtype, multiverseId, cardtext , created_by     	, creation_date  	, last_updated_by , last_update_date)VALUES(DEFAULT, :name, :type, :mID, :text, 1, statement_timestamp(), 1, statement_timestamp());';
+$query = 'INSERT INTO customInventory(id, cardname, cardtype, multiverseId, cardtext , created_by, creation_date, last_updated_by , last_update_date)VALUES(DEFAULT, :name, :type, :mID, :text, 1, statement_timestamp(), 1, statement_timestamp());';
 
 
 $statement = $db->prepare($query);
@@ -52,6 +52,6 @@ foreach ($rows as $card)
 
  echo "</table>";
 
-//header("Location: manualCardAdd.php");
+header("Location: manualCardAdd.php");
 
 ?>

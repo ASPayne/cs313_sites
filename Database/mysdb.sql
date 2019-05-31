@@ -45,8 +45,6 @@ ALTER TABLE PUBLIC.USER
 ALTER TABLE PUBLIC.USER
 	ALTER COLUMN last_updated_by REFERENCES public.user(id);
 
-Drop TABLE public.Card_types;
-
 CREATE TABLE public.card_types
 (
 	id 					SERIAL 		NOT NULL PRIMARY KEY,
@@ -55,6 +53,18 @@ CREATE TABLE public.card_types
 	creation_date  		DATE        NOT NULL,
 	last_updated_by 	int         NOT NULL REFERENCES PUBLIC.USER(id),
 	last_update_date 	DATE        NOT NULL 
+);
+
+Create table customInventory(
+id serial primary key
+, cardname varchar(100)
+, cardtype int references card_types(id)
+, multiverseId int
+, cardtext varchar(300)
+, created_by     		int         NOT NULL REFERENCES PUBLIC.USER(id)
+, creation_date  		DATE        NOT NULL
+, last_updated_by 	int         NOT NULL REFERENCES PUBLIC.USER(id)
+, last_update_date 	DATE        NOT NULL 
 );
 
 CREATE TABLE public.CardStorage

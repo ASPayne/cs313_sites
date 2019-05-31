@@ -19,7 +19,6 @@ include '../header.php';
 
 <body>
   <div class="cardview">
-    <form>
       <?php
       // define variables and set to empty values
       $CardNameErr = $CardTypeErr = $genderErr = $websiteErr = "";
@@ -67,6 +66,7 @@ include '../header.php';
       ?>
 
       <p><span class="error">* required field</span></p>
+
       <form method="POST" action="manualInventoryInsert.php">
         CardName: <input type="text" name="CardName" value="<?php echo $CardName; ?>">
         <span class="error">* <?php echo $CardNameErr; ?></span>
@@ -83,7 +83,7 @@ include '../header.php';
         } CATCH (Exception $ex)
         {
           echo "Error with DB. Details: $ex";
-	die();
+      	die();
         }
           ?>
         </select>
@@ -91,16 +91,14 @@ include '../header.php';
         --><br><br>
         CardText: <textarea name="CardText" rows="5" cols="40"><?php echo $CardText; ?></textarea>
         <br><br>
-        CustomActualProxy:
+         CustomActualProxy:
         <input type="radio" name="CustomActualProxy" <?php if (isset($CustomActualProxy) && $CustomActualProxy == "Actual") echo "checked"; ?> value="Actual">Actual
         <input type="radio" name="CustomActualProxy" <?php if (isset($CustomActualProxy) && $CustomActualProxy == "Custom") echo "checked"; ?> value="Custom">Custom
         <input type="radio" name="CustomActualProxy" <?php if (isset($CustomActualProxy) && $CustomActualProxy == "Proxy") echo "checked"; ?> value="Proxy">Proxy
         <span class="error">* <?php echo $CustomActualProxyErr; ?></span>
         <br><br>
-        <input type="submit" value="Add to inventory">
+        <button type="submit" value="Submit">insert</button>
       </form>
-
-    </form>
 
     <br />
     <hr><br />
@@ -143,16 +141,12 @@ foreach ($rows as $card)
   echo "</a>";
   echo "</tr>";
 }
-
-
  echo "</table>";
-
 
 ?>
 
 
     <br /><br />
-
     <br>
   </div>
 </body>
