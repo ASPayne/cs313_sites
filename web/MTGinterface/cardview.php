@@ -1,7 +1,7 @@
 
 <?PHP
 session_start();
-include '../../vendor/autoload.php';
+#include '../../vendor/autoload.php';
 ?>
 
 <!DOCTYPE html>
