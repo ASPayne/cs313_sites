@@ -74,7 +74,6 @@ include '../header.php';
         CardType:
         <select name="CardType">
           <?PHP
-
           try
           {
           foreach ($db->query('SELECT id, card_types FROM card_types') as $row) {

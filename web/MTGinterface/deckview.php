@@ -1,4 +1,3 @@
-
 <?PHP
 #include 'databaseconnect.php';
 ?>
@@ -19,26 +18,7 @@ include '../header.php';
     <div class="deckview">
 <?php
 include 'databaseconnect.php';
-/*
-try {
-  $dbUrl = getenv('DATABASE_URL');
 
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"], '/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-} catch (PDOException $ex) {
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
-*/
 if (isset($_GET["decknum"])) {
   $deckIdNum = $_GET["decknum"];
 }
@@ -49,16 +29,8 @@ $userdecknum = $deckIdNum;
 
 $stmt = $db->prepare('SELECT d.num_owned, cs.cardname, cs.manacost from CardStorage cs join deck d on cs.id = d.card_num where d.deck_owner = ?');
 $stmt->bindValue('1', $userdecknum, PDO::PARAM_INT);
-#$stmt->bindValue('cardname', $cname, PDO::PARAM_STR);
-#$stmt->bindValue('manacost', $manacost, PDO::PARAM_STR);
 $stmt->execute();
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-#$sql = "SELECT d.num_owned, cs.cardname, cs.manacost 
-#from CardStorage cs join deck d 
-#on cs.id = d.card_num 
-#where d.deck_owner = 1";# . $_GET['user'];
-
 
 echo "<table id='deckviewtable'>";
 
@@ -67,7 +39,6 @@ echo "<th>NumberInDeck</th>";
 echo "<th>CardName</th>";
 echo "<th>Cost</th>";
 echo "</tr>";
-#foreach ($db->query('SELECT d.num_owned, cs.cardname, cs.manacost, cs.multiverseid from CardStorage cs join deck d on cs.id = d.card_num where d.deck_owner = 2') as $row)
 foreach ($rows as $card) 
 {
   echo "<tr>";
@@ -78,15 +49,6 @@ foreach ($rows as $card)
   echo "</a>";
   echo "</tr>";
 }
-
-#while ($row) { 
-#echo "<tr>";
-#echo "<td>" . $row['num_owned'] . "</td>";
-#echo "<td>" . $row['cardname'] . "</td>";
-#echo "<td>" . $row['manacost'] . "</td>";
-#echo "</tr>";
- #}
-
  echo "</table>";
 
 

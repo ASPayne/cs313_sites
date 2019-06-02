@@ -1,15 +1,8 @@
 <?php
 // Start the session
 session_start();
-
-/*if (! isset($_SESSION["user"]))
+function login_user($userid)
 {
-	$_SESSION["user"] = "NOBODY";
+$_SESSION["user"] = $userid;
 }
-*/
-function login_user($username)
-{
-$_SESSION["user"] = $username;
-}
-
 ?>

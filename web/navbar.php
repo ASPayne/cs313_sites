@@ -40,16 +40,16 @@ switch ($current_file) {
 ?>
 
 <ul class="navbar">
-    <li class="navitem<?PHP echo($NavBarActive["Home"]); /*if ($home_active) {echo " active" ;}*/ ?> ">
+    <li class="navitem<?PHP echo($NavBarActive["Home"]);  ?> ">
         <a href="/home.php">Home</a></li>
-    <li class="navitem<?PHP echo $NavBarActive["About"]; /*if ($about_active) { echo " active" ;}*/ ?> ">
+    <li class="navitem<?PHP echo $NavBarActive["About"];  ?> ">
         <a href="/about-us.php">About Us</a></li>
-    <li class="navitem<?PHP echo $NavBarActive["CardView"]; /*if ($login_active) {echo " active" ;}*/ ?> ">
+    <li class="navitem<?PHP echo $NavBarActive["CardView"]; ?> ">
         <a href="/MTGinterface/cardview.php">Card Viewer</a></li>
-    <li class="navitem<?PHP echo $NavBarActive["DeckView"]; /*if ($login_active) {echo " active" ;}*/ ?> ">
+    <li class="navitem<?PHP echo $NavBarActive["DeckView"]; ?> ">
         <a href="/MTGinterface/deckview.php">Deck Viewer</a></li>
-    <li class="navitem<?PHP echo $NavBarActive["Pages"]; /*if ($login_active) {echo " active" ;}*/ ?> ">
+    <li class="navitem<?PHP echo $NavBarActive["Pages"]; ?> ">
         <a href="/pages.php">Pages</a></li>
-    <li  class="navitem login<?PHP echo $NavBarActive["Login"]; /*if ($login_active) {echo " active" ;}*/ ?>">
+    <li  class="navitem login<?PHP echo $NavBarActive["Login"]; ?>">
         <a href="/login.php">Login</a></li>
 </ul>
