@@ -1,6 +1,7 @@
 
 <?PHP
 session_start();
+include '../../vendor/autoload.php';
 ?>
 
 <!DOCTYPE html>
@@ -21,6 +22,11 @@ echo "<br>" . (sizeof($card)-1);
 //echo findbyname('Fog');
 echo $card['imageUrl'];
 var_dump($cards);
+
+
+//$newcard = Card::find(386616);
+echo '<br>';
+var_dump($newcard);
 ?>
 
 <body>
