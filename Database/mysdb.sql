@@ -41,9 +41,9 @@ DEFAULT
 
 
 ALTER TABLE PUBLIC.USER
-	ALTER COLUMN created_by REFERENCES public.user(id);
+ADD CONSTRAINT fk_created_by FOREIGN KEY (created_by) REFERENCES PUBLIC.USER(id);
 ALTER TABLE PUBLIC.USER
-	ALTER COLUMN last_updated_by REFERENCES public.user(id);
+ADD CONSTRAINT fk_last_updated_by FOREIGN KEY (created_by) REFERENCES PUBLIC.USER(id);
 
 CREATE TABLE public.card_types
 (
@@ -83,6 +83,14 @@ CREATE TABLE public.CardStorage
 	last_updated_by 	int           	NOT NULL,
 	last_update_date  	DATE          	NOT NULL 
 );
+
+CREATE UNIQUE INDEX CONCURRENTLY card_multiverse_id_index 
+ON cardstorage (multiverseid);
+	
+ALTER TABLE cardstorage 
+ADD CONSTRAINT unique_multiverse_id 
+UNIQUE USING INDEX card_multiverse_id_index;
+
 
 CREATE TABLE public.inventory
 (

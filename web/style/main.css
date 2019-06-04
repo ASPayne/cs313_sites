@@ -101,7 +101,7 @@ ul.navbar li.navitem.login li.navitem.active {
 
 /* Style the footer */
 .footer {
-  height: 45px;
+  height: auto;
   background-color: #4c4c4c;
   color: #f2f1f0;
   margin-top: 20px;
@@ -137,13 +137,17 @@ div.deckview #deckviewtable {
   width: 100%;
 }
 
+#cardlist td, #cardlist th,
 #deckviewtable td, #deckviewtable th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#deckviewtable tr:hover {background-color: #4c4c4c;}
 
+#deckviewtable tr:hover {background-color: #4c4c4c;}
+#cardlist tr:hover {background-color: #4c4c4c;}
+
+#cardlist th,
 #deckviewtable th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -152,6 +156,7 @@ div.deckview #deckviewtable {
   color: #3c3c3c;
 }
 
+#cardlist,
 div.cardview{
   max-width: 400px;
   margin: auto;

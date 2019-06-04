@@ -22,7 +22,7 @@ include '../header.php';
 //var_dump($cards);
 
 
-$card = Card::find(386617);
+$card = Card::find($_GET['id']);
 //echo $card->imageUrl;
 
 echo '<br><br><br>';
@@ -43,8 +43,9 @@ echo '<br><br><br>';
         </p>
         <br /><br /><br /><br />
         <br>
-        <form class="form" action="addCardToDeck.php" method="POST">
-            <input type="button" name="action" value="add to deck2">
+        <form action="addCardToDeck.php" method="POST">
+            <input type="hidden" name="cardID" value="<?PHP echo $card->multiverseid; ?>">
+            <button type="submit" value="Submit">Add to CardStorage</button>
         </form>
     </div>
 </body>
