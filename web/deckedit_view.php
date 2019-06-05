@@ -1,7 +1,7 @@
 <?PHP
 session_start();
 #require 'vendor/autoload.php';
-require '../vendor/autoload.php';
+require 'vendor/autoload.php';
 
 use mtgsdk\Card;
 ?>
