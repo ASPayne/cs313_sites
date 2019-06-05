@@ -69,12 +69,13 @@ switch ($current_file) {
             "REMOVE" => " "
         );
 }
-
+echo "test3";
 if (isset($_GET['id'])) {
     $card = Card::find($_GET['id']);
 } else {
     $card = Card::find(433014);
 }
+echo "test4";
 ?>
 
 <body>
