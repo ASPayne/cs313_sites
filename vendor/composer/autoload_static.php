@@ -6,9 +6,25 @@ namespace Composer\Autoload;
 
 class ComposerStaticInitbc3eaf3d57d8f19f37adbe7df141c552
 {
+    public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'mtgsdk\\' => 7,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'mtgsdk\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/mtgsdk/mtgsdk/src',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbc3eaf3d57d8f19f37adbe7df141c552::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbc3eaf3d57d8f19f37adbe7df141c552::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
