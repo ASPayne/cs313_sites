@@ -1,9 +1,8 @@
 <?PHP
 session_start();
 
-require __DIR__ . '/..' . '/vendor/autoload.php';
+include __DIR__ . '/..' . '/vendor/autoload.php';
 
-echo __DIR__ . '/..' . '/vendor/autoload.php';
 
 use mtgsdk\Card;
 ?>
