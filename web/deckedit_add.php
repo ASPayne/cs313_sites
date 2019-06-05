@@ -42,8 +42,10 @@ use mtgsdk\Card;
 <?PHP
 include 'header.php';
 
+echo "test1";
 $current_file = basename($_SERVER['PHP_SELF']);
 
+echo "test2";
 $NavEditBarActive = array(
     "ADD" => " ",
     "VIEW" => " ",
