@@ -1,6 +1,5 @@
 {
   "require": {
-    "php": "^7.1.0",
-    "mtgsdk/mtgsdk": "dev-master"
+    "php": "^7.3.0"
   }
 }
