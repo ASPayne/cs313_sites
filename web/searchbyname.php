@@ -34,3 +34,4 @@ echo "</table>";
 
 
 //echo $card->name;
+?>

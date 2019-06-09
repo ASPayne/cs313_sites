@@ -107,7 +107,7 @@ ul.navbar li.navitem.login li.navitem.active {
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 20px;
-  position: fixed;
+  /*position: fixed;*/
   bottom: 0px;
   width: 100%;
   text-align: center;
@@ -158,7 +158,7 @@ div.deckview #deckviewtable {
 
 #cardlist,
 div.cardview{
-  max-width: 400px;
+  /*max-width: 400px;*/
   margin: auto;
   background-color: #8c8c8c;
   color: #3c3c3c;

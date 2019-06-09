@@ -43,11 +43,7 @@ use mtgsdk\Card;
 </head>
 <?PHP
 include 'header.php';
-
-echo "test1";
 $current_file = basename($_SERVER['PHP_SELF']);
-
-echo "test2";
 $NavEditBarActive = array(
     "ADD" => " ",
     "VIEW" => " ",
@@ -71,13 +67,11 @@ switch ($current_file) {
             "REMOVE" => " "
         );
 }
-echo "test3";
 if (isset($_GET['id'])) {
     $card = Card::find($_GET['id']);
 } else {
     $card = Card::find(433014);
 }
-echo "test4";
 ?>
 
 <body>
@@ -90,7 +84,7 @@ echo "test4";
 
             search card name: <input id="cardsearch">
 
-            <button type="button" onclick="showCardList()">Submit</button>
+            <button type="button" onclick="jscardlistrequest()">Submit</button>
             </form>
             <div id="listofcards">Searches may take time before anything shows up.</div>
             <div id="loader"></div>
@@ -113,12 +107,12 @@ echo "test4";
                     <br /><br /><br /><br />
                     <br>-->
                 </div>
-                <input type="number" name="quantity">
-                <button type="button" onclick="addToDeck()">addCardToDeck</button>
-                <form action="addCardToDeck.php" method="POST">
-                    <input type="hidden" name="cardID" value="<?PHP echo $card->multiverseid; ?>">
-                    <button type="submit" value="Submit">Add to CardStorage</button>
-                </form>
+                    <input type="number" id="quantity" min="1">
+                <button type="button" onclick="jsaddToDeck()">addCardToDeck</button>
+                <!--<form action="addCardToDeck.php" method="POST">
+                    <input type="hidden" name="cardID" value="<?PHP #echo $card->multiverseid; ?>">
+                    <button type="submit" value="Submit">Add to CardStorage</button>-
+                </form>-->
             </div>
         </div>
 
