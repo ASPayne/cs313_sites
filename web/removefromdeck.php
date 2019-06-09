@@ -1,6 +1,8 @@
 <?PHP
+session_start();
 include 'databaseconnection.php';
-function removefromdeck($userid, $cardid){
+
+$cardid = $_GET['cardid'];
 
 $query =
 'DO $$
@@ -31,13 +33,11 @@ END $$;
 
 $stmt = $db->prepare($query);
 $stmt->bindValue(':cardid', $cardid, PDO::PARAM_INT);
-$stmt->bindValue(':userid', $userid, PDO::PARAM_INT);
+$stmt->bindValue(':userid', $_SESSION['userid'], PDO::PARAM_INT);
 $stmt->execute();
 
     //$stmt = $db->prepare('DELETE from deck d on cs.id = d.card_num where d.deck_owner = ?');
     //$stmt->bindValue('1', $deckIdNum, PDO::PARAM_INT);
     //$stmt->execute();
 
-    header('Location: deckedit_remove.php');
-}
 ?>

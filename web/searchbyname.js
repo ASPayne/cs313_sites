@@ -185,8 +185,52 @@ function jsaddToDeck() {
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         //document.getElementById("cardview").innerHTML = this.responseText;
+        showUserDeck();
       }
     };
     xmlhttp.open("GET", url + "?" + params, true);
     xmlhttp.send(params);
+  }
+  
+
+  function jsremovefromDeck($cardid) {
+    var url = "removefromdeck.php";
+    var cardid = $cardid;
+  
+    if (window.XMLHttpRequest) {
+      // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+    } else {
+      // code for IE6, IE5
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        //document.getElementById("cardview").innerHTML = this.responseText;
+        showUserRemoveFromDeck();
+      }
+    };
+    xmlhttp.open("GET", url + "?" + params, true);
+    xmlhttp.send(params);
+  }
+
+
+
+  function showUserDeck(){
+    var url = "viewuserdeck.php";
+  
+    if (window.XMLHttpRequest) {
+      // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp = new XMLHttpRequest();
+    } else {
+      // code for IE6, IE5
+      xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        document.getElementById("deckviewtable").innerHTML = this.responseText;
+      }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
   }

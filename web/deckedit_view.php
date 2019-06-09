@@ -16,6 +16,9 @@ session_start();
     <link rel="stylesheet" type="text/css" href="../style/main.css">
     <title>DeckViewer</title>
 </head>
+
+<script src="searchbyname.js"></script>
+
 <?PHP
 include 'header.php';
 
@@ -43,8 +46,9 @@ switch ($current_file) {
 ?>
 
 <body>
-    <div class="deckview">
+    <div class="deckview" >
         <?php
+        /*
         include 'databaseconnect.php';
 
         if (isset($_SESSION["userid"])) {
@@ -58,7 +62,7 @@ switch ($current_file) {
         $stmt->bindValue('1', $deckIdNum, PDO::PARAM_INT);
         $stmt->execute();
         $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        ?>
+        */?>
         <ul class="navbar">
             <li class="navitem<?PHP echo ($NavEditBarActive["ADD"]); ?> ">
                 <a href="deckedit_add.php">ADD</a></li>
@@ -67,7 +71,9 @@ switch ($current_file) {
             <li class="navitem<?PHP echo $NavEditBarActive["REMOVE"]; ?> ">
                 <a href="deckedit_remove.php">REMOVE</a></li>
         </ul>
-        <table id='deckviewtable'>
+        
+        <table id='deckviewtable'> 
+            <script> showUserDeck()</script>
 
             <tr>
                 <th>NumberInDeck</th>
@@ -76,6 +82,7 @@ switch ($current_file) {
             </tr>
 
             <?PHP
+        
             foreach ($rows as $card) {
                 echo "<tr>";
                 echo '<a href="/cardview.php?id=' . $card['multiverseid'] . '">';
